@@ -1,0 +1,135 @@
+/* styles.css */
+body {
+  background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+  color: #333;
+  transition: all 0.5s ease;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(-45deg, #ffe4ef, #f8bbd0, #f48fb2, #fce4eb);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  @keyframes floatEmoji {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100vh); opacity: 0; }
+  }
+  
+  .emoji {
+    position: absolute;
+    font-size: 2rem;
+    animation: floatEmoji 5s linear forwards;
+    pointer-events: none;
+  }
+
+   
+  .container {
+    width: 350px;
+    height: 450px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    overflow: hidden;
+  } 
+
+  h1 {
+    color: #e91e63;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px -8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  button {
+    background-color: #e91e63;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 8px 0px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  button:hover {
+    background-color: #c2185b;
+  }
+  
+  .mensagem {
+    margin-top: 16px;
+    color: #880e4f;
+    white-space: pre-line;
+  }
+  
+  .botoes {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  
+  .botoes button {
+    flex: 1;
+  }
+  
+
+  /* Estilo do botão do modo noturno */
+.modo-noturno-toggle {
+  position: fixed;
+  top: 20px;
+  bottom: 80px;
+  left: 20px;
+  z-index: 10;
+}
+
+.modo-noturno-toggle button {
+  background-color: #7e57c2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.modo-noturno-toggle button:hover {
+  background-color: #5e35b1;
+}
+
+body.modo-noturno {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #eee;
+}
+
+body.modo-noturno .container {
+  background: rgba(30, 30, 30, 0.9);
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .modo-noturno-toggle {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

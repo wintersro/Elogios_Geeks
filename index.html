@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elogios Geeks</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <audio id="musica" loop>   <!--https://pixabay.com/!-->
+    <source src="src/musica1.mp3" type="audio/mp3">
+  </audio>
+
+  <div class="modo-noturno-toggle">
+    <button onclick="alternarModo()">🌙 Alternar Modo</button>
+  </div>
+
+  <div class="container">
+    <div class="botoes">
+        <button onclick="tocarMusica()">▶ Tocar Música</button>
+        <button onclick="pausarMusica()">⏸ Pausar Música</button>
+      </div>
+    <h1>Elogios Geeks 💻❤️</h1>
+    <input type="text" id="nome" placeholder="Seu nome">
+    <input type="text" id="frase" placeholder="Uma frase...">
+    <div class="botoes">
+      <button onclick="gerarElogio()">Gerar Elogio</button>
+      <button onclick="copiarElogio()">Copiar</button>
+      <button onclick="limparCampos()">Limpar</button>
+    </div>
+    <div class="mensagem" id="mensagem"></div>
+  </div>
+  
+
+  <audio id="efeitoSom">
+    <source src="src/mouse-click.mp3" type="audio/mp3">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
