@@ -4,7 +4,7 @@ Este é um projeto divertido e encantador feito com HTML, CSS e JavaScript que p
 
 ---
 
-![Preview do Projeto](/Elogios_Geeks/src/Preview.png)
+![Preview do Projeto](Preview.png)
 
 ---
 
